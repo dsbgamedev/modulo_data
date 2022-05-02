@@ -17,12 +17,29 @@ public class DataEmJava {
 	
 	public static void main(String[] args) throws ParseException, InterruptedException {
 		
+		
+ /************************************************************************************/
+		
+		/*Modulo 15 - Aula 12 - Faixa de tempo com objeto periodo*/
+		
+		
+		LocalDate dataAntiga = LocalDate.of(2020, 6, 7);
+		
+		LocalDate dataNova = LocalDate.of(2021, 8, 7);
+		
+		
+		
+		
+		System.out.println("Data antiga e maior que data nova " + dataAntiga.isAfter(dataNova));
+		
+		
+		
         /************************************************************************************/
 		
 		/*Modulo 15 - Aula 11 - Tempo de processo instant*/
 		
 		
-		Instant inicio = Instant.now();
+		/*Instant inicio = Instant.now();
 		
 		Thread.sleep(2000);//Processo em tempo qualquer
 		
@@ -31,7 +48,7 @@ public class DataEmJava {
 		Duration duration = Duration.between(inicio, iFinal );
 		
 		System.out.println(" Duração em nano segundo " + duration.toNanos());
-		
+		*/
 		
 		/************************************************************************************/
 		
