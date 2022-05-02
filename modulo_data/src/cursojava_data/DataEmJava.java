@@ -9,6 +9,12 @@ public class DataEmJava {
 	
 	public static void main(String[] args) throws ParseException {
 		
+		
+		
+		
+		
+		
+		/*Modulo 15 - Aula 4 - comparando datas usando After e Before */
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date dataVencimentoBoleto = simpleDateFormat.parse("03/05/2022");
 		Date dataAtualHoje =  simpleDateFormat.parse("04/05/2022");
