@@ -5,6 +5,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
@@ -14,8 +16,27 @@ public class DataEmJava {
 	public static void main(String[] args) throws ParseException {
 		
 		/************************************************************************************/
-		/*Modulo 15 - Aula 7 - Gerando parcelas mensais*/
 		
+		/*Modulo 15 - Aula 8 e 9 - Nova API de Data e Hora do Java a partir do Java 8*/
+		
+		LocalDate dataAtual = LocalDate.now();
+		
+		System.out.println("Data Atual " + dataAtual);
+		
+		LocalTime horaAtual = LocalTime.now();
+		
+		System.out.println("Hora Atual " + horaAtual);
+		
+		LocalDateTime dataAtualHoraAtual = LocalDateTime.now();
+		
+		System.out.println("Data e hora atual : " + dataAtualHoraAtual.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")));
+		
+		
+		
+		
+		/************************************************************************************/
+		/*Modulo 15 - Aula 7 - Gerando parcelas mensais*/
+		/*
 		Date dataInicial =   new SimpleDateFormat("dd/MM/yyyy").parse("02/05/2022");
 		
 		Calendar calendar = Calendar.getInstance();
@@ -24,7 +45,7 @@ public class DataEmJava {
 		for(int parcela = 1; parcela <= 5 ; parcela++ ) {
 			calendar.add(Calendar.MONDAY, 1);
 			System.out.println("Parcela de numero " + parcela + " Vencimento eh em " + new SimpleDateFormat().format(calendar.getTime()) );
-		}
+		}*/
 		
 		
 		/**********************************************************************************/
