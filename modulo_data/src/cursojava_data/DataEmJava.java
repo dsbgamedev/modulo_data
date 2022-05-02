@@ -3,6 +3,9 @@ package cursojava_data;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -10,10 +13,22 @@ public class DataEmJava {
 	
 	public static void main(String[] args) throws ParseException {
 		
+		/************************************************************************************/
+		/*Modulo 15 - Aula 7 - Gerando parcelsa mensais*/
+		
+		
+		
+		
+		
+		
 		/**********************************************************************************/
 		/*Modulo 15 - Aula 6 - Faixa de tempo com ChronoUnit*/
 		
+		//Date dataPassada = new SimpleDateFormat("dd/MM/yyyy").parse("02/05/2022");
 		
+		long dias = ChronoUnit.DAYS.between(LocalDate.parse("2021-05-01"), LocalDate.now());//Between(ente)Metodo Between retorno um long
+		
+		System.out.println("Possui " + dias + " dias entre a faixa da data ");
 		
 		
 		/***********************************************************************************/
