@@ -3,6 +3,8 @@ package cursojava_data;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -13,12 +15,28 @@ import java.util.Date;
 
 public class DataEmJava {
 	
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args) throws ParseException, InterruptedException {
+		
+        /************************************************************************************/
+		
+		/*Modulo 15 - Aula 11 - Tempo de processo instant*/
+		
+		
+		Instant inicio = Instant.now();
+		
+		Thread.sleep(2000);//Processo em tempo qualquer
+		
+		Instant iFinal = Instant.now();
+		
+		Duration duration = Duration.between(inicio, iFinal );
+		
+		System.out.println(" Duração em nano segundo " + duration.toNanos());
+		
 		
 		/************************************************************************************/
 		
-		/*Modulo 15 - Aula 8 e 9 - Nova API de Data e Hora do Java a partir do Java 8*/
-		
+		/*Modulo 15 - Aula 8 9 10 - Nova API de Data e Hora do Java a partir do Java 8*/
+		/*
 		LocalDate dataAtual = LocalDate.now();
 		
 		System.out.println("Data Atual " + dataAtual);
@@ -30,7 +48,7 @@ public class DataEmJava {
 		LocalDateTime dataAtualHoraAtual = LocalDateTime.now();
 		
 		System.out.println("Data e hora atual : " + dataAtualHoraAtual.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")));
-		
+		*/
 		
 		
 		
