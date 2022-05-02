@@ -18,11 +18,15 @@ public class DataEmJava {
 	public static void main(String[] args) throws ParseException, InterruptedException {
 		
 		
- /************************************************************************************/
+		/*Modulo 15 - Aula 13 - data, anos, dias, meses e parcelas com LocalDate*/
+		
+		
+		
+        /************************************************************************************/
 		
 		/*Modulo 15 - Aula 12 - Faixa de tempo com objeto periodo*/
 		
-		
+		/*
 		LocalDate dataAntiga = LocalDate.of(2020, 6, 7);
 		
 		LocalDate dataNova = LocalDate.of(2021, 8, 7);
@@ -31,8 +35,7 @@ public class DataEmJava {
 		
 		
 		System.out.println("Data antiga e maior que data nova " + dataAntiga.isAfter(dataNova));
-		
-		
+		*/		
 		
         /************************************************************************************/
 		
